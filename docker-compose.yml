@@ -1,0 +1,8 @@
+services:
+  jarney-site:
+    build: .
+    image: jarney-site:latest
+    container_name: jarney-site
+    restart: unless-stopped
+    ports:
+      - "8081:80"
